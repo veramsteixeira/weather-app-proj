@@ -1,4 +1,5 @@
-function formatDate(dateTime) {
+function formatDate(timestamp) {
+  let dateTime = new Date(timestamp);
   let days = [
     "Sunday",
     "Monday",
@@ -116,7 +117,7 @@ function displayCelsiusTemperature(event) {
 
 let celsiusTemperature = null;
 
-let form = document.querySelector("#search-form");
+let form = document.querySelector("#search");
 form.addEventListener("submit", handleSubmit);
 
 let fahrenheitLink = document.querySelector("#fahrenheit-link");
