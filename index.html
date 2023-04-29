@@ -17,124 +17,129 @@
       crossorigin="anonymous"
     ></script>
     <link rel="stylesheet" href="src/styles.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <div class="container">
-        <div class="card mx-auto" style="width: 700px" position="center" id="card">
-            <div class="card-body">
-        <div class="row">
-            <h4>
-                How's the weather today?
-            </h4>
-                <div class="search">
-                    <form id="search">
-                        <input type="search" placeholder="Search your city..." class="form" id="city-input"  autocomplete="off
-                        " />
-                        <input type="submit" value="🔍" />
-                    </form>
-                </div>
-        </div>
-        <div class="col-3">
-          <button type="button" class="btn btn-secondary" id="current-location-button">My location</button>
-           
-         </div>
-    <br>
-    <div class="overview">
-      <h1 id="city"></h1>
-    <ul> 
-      <li><span id="date"></span> </li>
-          <li id="description"></li>
-    </ul>
-    <div class="row">
-      <div class="col-6">
-        <div class="d-flex weather-temperature">    
-      <img
-              src=""
-              alt="Clear"
-              id="icon"
-              class="float-left"
-            />
-       <div class="float-left"> 
-              <strong id="temperature"></strong>
-              <span class="units"><a href="#" id="celsius-link" class="active">ºC</a> |
-                 <a href="#" id="fahrenheit-link">ºF</a></span>
+      <div class="weather-app-wrapper">
+        <div class="weather-app">
+          <div class="row">
+            <h4>How's the weather today?</h4>
+            <div class="search">
+              <form id="search">
+                <input
+                  type="search"
+                  placeholder="Search your city..."
+                  class="form"
+                  id="city-input"
+                  autocomplete="off
+                        "
+                />
+                <input type="submit" value="🔍" />
+              </form>
             </div>
-        </div>     
-          <div class="col-6">
-          <ul>
-            <li>Humidity: <span id="humidity"></span>%</li>
-            <li>Wind: <span id="wind"></span>km/h</li>
-          </ul>
+          </div>
+          <div class="col-3">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              id="current-location-button"
+            >
+              My location
+            </button>
+          </div>
+          <br />
+          <div class="overview">
+            <h1 id="city"></h1>
+            <ul>
+              <li><span id="date"></span></li>
+              <li id="description"></li>
+            </ul>
+            <div class="row">
+              <div class="col-6">
+                <div class="d-flex weather-temperature">
+                  <img src="" alt="Clear" id="icon" class="float-left" />
+                  <div class="float-left">
+                    <strong id="temperature"></strong>
+                    <span class="units"
+                      ><a href="#" id="celsius-link" class="active">ºC</a> |
+                      <a href="#" id="fahrenheit-link">ºF</a></span
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="col-6">
+                <ul>
+                  <li>Humidity: <span id="humidity"></span>%</li>
+                  <li>Wind: <span id="wind"></span>km/h</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="row" id="weekdays">
+            <div class="col-2">
+              Sun
+              <br />
+              🌞
+              <br />
+              25ºC
+              <br />
+              13ºC
+            </div>
+            <div class="col-2">
+              Mon
+              <br />
+              ⛅
+              <br />
+              28ºC
+              <br />
+              14ºC
+            </div>
+            <div class="col-2">
+              Tue
+              <br />
+              ⛅
+              <br />
+              26ºC
+              <br />
+              9ºC
+            </div>
+            <div class="col-3">
+              Wed
+              <br />
+              ⛅
+              <br />
+              22ºC
+              <br />
+              11ºC
+            </div>
+            <div class="col-3">
+              Thu
+              <br />
+              ⛅
+              <br />
+              18ºC
+              <br />
+              11ºC
+            </div>
           </div>
         </div>
-      </div>
-       </div>
-    </div>
-        
-      <div class="row" id="weekdays">
-        <div class="col-2">
-          Sun
-          <br />
-          🌞
-          <br />
-          25ºC
-          <br />
-          13ºC
-        </div>
-        <div class="col-2">
-          Mon
-          <br />
-          ⛅
-          <br />
-          28ºC
-          <br />
-          14ºC
-        </div>
-        <div class="col-2">
-          Tue
-          <br />
-         ⛅
-          <br />
-          26ºC
-          <br />
-          9ºC
-        </div>
-        <div class="col-3">
-          Wed
-          <br />
-         ⛅
-          <br />
-          22ºC
-          <br />
-          11ºC
-        </div>
-        <div class="col-3">
-          Thu
-          <br />
-          ⛅
-          <br />
-          18ºC
-          <br />
-          11ºC
-        </div>
-          <br />
-        <br />
-        <br />
-         </div>
-    </div>
-    
-     <small>
-        <a
-          href="https://github.com/veramsteixeira/weather-app-proj"
-          target="_blank"
-          >Open-source code</a
+        <small>
+          <a
+            href="https://github.com/veramsteixeira/weather-app-proj"
+            target="_blank"
+            >Open-source code</a
+          >
+          by Vera Teixeira</small
         >
-        by Vera Teixeira</small
-      >
-    <script src="src/index.js"></script>
+
+        <script src="src/index.js"></script>
+      </div>
+    </div>
   </body>
 </html>
-
