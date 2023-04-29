@@ -12,6 +12,10 @@ div {
   display: block;
 }
 
+small {
+  text-decoration-style: dotted;
+}
+
 .card {
   background-color: lightblue;
 }
