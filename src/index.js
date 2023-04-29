@@ -78,7 +78,6 @@ function handleSubmit(event) {
   search(cityInputElement.value);
 }
 
-//Position
 function showPosition(position) {
   let latitude = position.coords.latitude;
   let longitude = position.coords.longitude;
